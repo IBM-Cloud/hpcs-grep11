@@ -1,0 +1,21 @@
+/*
+Copyright IBM Corp. All Rights Reserved.
+
+SPDX-License-Identifier: Apache-2.0
+*/
+
+syntax = "proto3";
+
+package grep11;
+
+
+option java_multiple_files = true;
+option java_outer_classname = "Grep11ErrorsProto";
+option java_package = "com.ibm.crypto.grep11.grpc";
+
+
+message Grep11Error {
+  uint64 Code = 1;
+  string Detail = 2;
+  bool Retry = 3;
+}
